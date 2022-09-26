@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using FluentValidation;
+using WebApi_Zapateria.Validaciones;
 
 namespace WebApi_Zapateria
 {
@@ -15,6 +16,7 @@ namespace WebApi_Zapateria
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            //aplicando serivcio de validaciones
             //servicio para manejar nuestra base de datos 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TsJPPRZelq3iNhXBGq3PHSpQy8so+er8Skp8lBbJjsmscYFcHDXSJMvm3DWMoMF0EFrn2Bh0a2E187my+S+iJw==",
+  "dgSpecHash": "bIjHqGNTQT45cVY1NEVBTClDIT0eVM+z8Vxu2ZZfNRCsOVpkI5S2BKHkMRVFm8gj2vXdwA3IjDRAHoofxWSDnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\E6430 H\\Desktop\\WebApi_Zapateria\\WebApi_Zapateria\\WebApi_Zapateria\\WebApi_Zapateria.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\E6430 H\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\E6430 H\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\E6430 H\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\E6430 H\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
