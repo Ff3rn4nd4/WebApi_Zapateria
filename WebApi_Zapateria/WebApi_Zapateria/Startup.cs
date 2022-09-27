@@ -16,7 +16,8 @@ namespace WebApi_Zapateria
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //aplicando serivcio de validaciones
+            //aplicando serivcio de validacion
+            //.AddFluentValidation<PedZapValidacion>()
             //servicio para manejar nuestra base de datos 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));

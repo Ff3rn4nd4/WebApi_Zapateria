@@ -7,10 +7,10 @@ namespace WebApi_Zapateria.Validaciones
     {
         public PedZapValidacion()
         {
-            RuleFor(pedzap => pedzap.Id);
-            RuleFor(pedzap => pedzap.Talla);
-            RuleFor(pedzap => pedzap.Marca);
-            RuleFor(pedzap => pedzap.Color);
+            RuleFor(p=> p.Id).Empty();
+            RuleFor(p=> p.Talla).NotEmpty();
+            RuleFor(p=> p.Marca).NotEmpty();
+            RuleFor(p=> p.Color).NotEmpty();
         }
     }
 }
