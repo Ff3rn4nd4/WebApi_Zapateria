@@ -11,7 +11,7 @@ namespace WebApi_Zapateria.Controllers
     {
         //métodos utilizados get, put, push, post
 
-        [HttpGet]
+        [HttpGet("id: int")]
         public async Task<ActionResult<List<Orden>>> Get()
         {
             /*return new List<Orden>()
@@ -25,7 +25,7 @@ namespace WebApi_Zapateria.Controllers
             return await dbContext.Orden.ToListAsync();
         }
 
-        [HttpPost]
+        [HttpPost("id: int")]
         public async Task<ActionResult<int>> Post(Orden orden)
         {
             dbContext.Add(orden);
@@ -45,7 +45,7 @@ namespace WebApi_Zapateria.Controllers
         {
             if (orden.Id != id)
             {
-                return BadRequest("El id del zapato no coincide con el establecido en la url");
+                return BadRequest("El id de la orden no coincide con el establecido en la url");
             }
 
             dbContext.Update(orden);

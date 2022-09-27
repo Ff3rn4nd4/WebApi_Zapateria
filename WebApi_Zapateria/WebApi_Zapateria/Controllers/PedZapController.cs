@@ -12,7 +12,7 @@ namespace WebApi_Zapateria.Controllers
         //métodos utilizados get, put, push, post
 
         //sirvio para crear nuestra base de datos
-        [HttpGet]
+        [HttpGet("id: int")]
         public async Task<ActionResult<List<PedZap>>> Get()
         {
             /*return new List<PedZap>()
@@ -28,7 +28,7 @@ namespace WebApi_Zapateria.Controllers
         }
 
         //sirve para ingresar datos 
-        [HttpPost]
+        [HttpPost("id: int")]
         public async Task<ActionResult<int>> Post(PedZap pedzap)
         {
             dbContext.Add(pedzap);
