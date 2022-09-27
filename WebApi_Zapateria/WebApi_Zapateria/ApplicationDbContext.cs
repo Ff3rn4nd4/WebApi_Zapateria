@@ -12,6 +12,6 @@ namespace WebApi_Zapateria
 
         //creando las bases de datos 
         public DbSet<PedZap> PedZap {get;set;}
-        //public DbSet<Orden> Orden { get; set; }
+        public DbSet<Orden> Orden { get; set; }
     }
 }

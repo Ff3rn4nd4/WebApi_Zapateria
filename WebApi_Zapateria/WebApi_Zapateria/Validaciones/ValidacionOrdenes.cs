@@ -7,6 +7,7 @@ namespace WebApi_Zapateria.Validaciones
     {
         public ValidacionOrden()
         {
+            RuleFor(o=> o.Id).Null();
             RuleFor(o=> o.Codigo).NotNull();
             RuleFor(o=> o.Precio).NotNull();
             RuleFor(o=> o.FechaEntrega).NotNull();
